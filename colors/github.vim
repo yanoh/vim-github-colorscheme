@@ -20,8 +20,8 @@ endif
 let colors_name = "github"
 
 " {{{ General colors
-hi Normal   ctermfg=0   ctermbg=255  guifg=#000000   guibg=#F8F8FF
-hi Cursor   ctermfg=239   ctermbg=15  guifg=#F8F8FF   guibg=#444454
+hi Normal   ctermfg=0   ctermbg=255  guifg=#000000   guibg=bg
+hi Cursor   ctermfg=239   ctermbg=15  guifg=bg guibg=gray
 hi Visual   ctermfg=15   ctermbg=61  guifg=#FFFFFF   guibg=#3465a3
 hi VisualNOS   ctermfg=15   ctermbg=24  guifg=#FFFFFF   guibg=#204a87
 hi Search   ctermfg=236   ctermbg=228  guifg=#000000   guibg=#FFFF8C  cterm=bold gui=bold
@@ -59,7 +59,7 @@ hi DiffDelete ctermfg=252 ctermbg=224   guifg=#DDCCCC guibg=#FFDDDD gui=none    
 hi Ignore   ctermfg=8 guifg=#808080
 hi Identifier   ctermfg=31 guifg=#0086B3
 hi PreProc  ctermfg=247 guifg=#A0A0A0 gui=bold cterm=bold
-hi Comment  ctermfg=246 guifg=#999988
+hi Comment  ctermfg=246 guifg=#666699
 hi Constant ctermfg=6 guifg=#177F80 gui=none cterm=none
 hi String   ctermfg=161 guifg=#D81745
 hi Function ctermfg=88 guifg=#990000 gui=bold cterm=bold
@@ -77,7 +77,7 @@ hi TypeDef      ctermfg=0 guifg=#000000 gui=bold    cterm=bold
 " {{{ Links
 hi! link FoldColumn Folded
 hi! link CursorColumn   CursorLine
-hi! link NonText    LineNr
+hi! link NonText    Normal
 " }}}
 
 " {{{ Aliases
